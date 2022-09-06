@@ -1,0 +1,71 @@
+.navhead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 2%;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.5);
+    background-color: whitesmoke;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.navhead p{
+    color: blue;
+    margin: 0;
+}
+.navhead .icon i,.icon i{
+    font-size: 2rem;
+    color: #556D0B;
+    position: relative;
+    cursor: pointer;
+}
+.navhead .icon i span,.icon i span{
+    position: absolute;
+    top: -60%;
+    /* left: 0; */
+    right: 25%;
+    font-size: 1rem;
+    padding: 0.4rem;
+    border-radius: 50%;
+    color: whitesmoke;
+    background-color: rgb(170, 67, 67);
+}
+.cartdrawer{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.cartbar{
+    display: none;
+    background-color: whitesmoke;
+    /* padding: 4%; */
+    border: 1px solid #556D0B;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.26);
+    border-radius: 50%;
+    height: fit-content;
+    width: fit-content;
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+}
+.close{
+    display: none;
+}
+@media (max-width:760px){
+    .navhead{
+        display: none;
+    }
+    .cartbar{
+        display: block;
+        padding: 4% 3%;
+        bottom: 5%;
+        right: 2%;
+        cursor: pointer;
+    }
+}
+@media (max-width:480px){
+    .close{
+        display: block;
+    }
+}

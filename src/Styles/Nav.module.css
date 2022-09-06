@@ -1,0 +1,89 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 5%;
+    background-color: #556D0B;
+}
+.nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+.nav ul li{
+    cursor: pointer;
+    color: whitesmoke;
+    display: flex;
+    gap: 0.7vw;
+}
+.nav ul li span:hover{
+    text-decoration: underline;
+}
+.blink{
+    margin: 0;
+    color: whitesmoke;
+}
+.blink .span{
+    color: #e76230;
+    font-weight: 800;
+    font-size: 16px;
+    animation: blink 2s linear infinite;
+}
+.blink .span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.shortnav{
+    display: none;
+    /* display: flex; */
+    justify-content: space-between;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.26);
+    align-items: center;
+    padding: 1% 2%;
+}
+.shortnav ul{
+    list-style: none;
+    display: flex;
+    gap: 1vw;
+    margin: 0;
+    padding: 0;
+}
+.shortnav ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #556D0B;
+    cursor: pointer;
+}
+.shortnav ul li i{
+    font-size: 1.7rem;
+}
+@media (max-width:760px){
+    .nav{
+        display: none;
+    }
+    .shortnav{
+        display: flex;
+    }
+}
+@media (max-width:480px){
+    .shortnav .navimage{
+        height: 2vw;
+        width: 5vw;
+    }
+    /* .shortnav ul li i{
+        font-size: 1rem;
+    } */
+}

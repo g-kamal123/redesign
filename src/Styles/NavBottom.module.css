@@ -1,0 +1,20 @@
+.navbottom{
+    padding: 1.5% 4%; 
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.26); 
+    background-color: whitesmoke;
+    position: sticky;
+    top: 8rem;
+    z-index: 1;
+}
+.navbottom a{
+    color: #222;
+    font-family: Raleway,sans-serif;
+    font-weight: 600;
+    margin: 0;
+    text-decoration: none;
+}
+@media (max-width:760px){
+    .navbottom{
+        display: none;
+    }
+}
